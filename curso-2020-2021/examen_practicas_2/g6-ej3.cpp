@@ -5,12 +5,12 @@ Además, escribir una función main que muestre que la función puede ser usada 
 */
 #include <iostream>
 using namespace std;
-double* elemento_igual_a_la_mitad_suma( double vector[], const int tama ) {
+double* elemento_igual_a_la_suma_dividido_50( double vector[], const int tama ) {
     double *toRet=0;
 
     // Podríamos aceptar: if (tama==0) return 0   // o return toRet;
 
-    // Calculo la mitad
+    // Calculo la suma dividida por 50
     double valor=0;
     for( int i=0; i<tama; ++i ) {
         valor+=vector[i];
@@ -31,12 +31,12 @@ int main() {
     double v_estatico[]={45,1,3,1};
     int cont_v_estatico=4;
 
-    double *direccion_mitad=elemento_igual_a_la_mitad_suma( v_estatico, cont_v_estatico );
+    double *direccion_mitad=elemento_igual_a_la_suma_dividido_50( v_estatico, cont_v_estatico );
     cout << "En el vector estático: ";
     if( direccion_mitad ) {
-        cout << "El dato que es igual a la mitad es " << *direccion_mitad << endl;
+        cout << "El dato que es igual a la suma dividida por 50 es " << *direccion_mitad << endl;
     } else {
-        cout << "No hay dato que sea igual a la mitad " << endl;
+        cout << "No hay dato que sea igual a la suma dividida por 50 " << endl;
     }
 
     // Comprobación con vector dinámico
@@ -46,12 +46,12 @@ int main() {
         v_dinamico[i]=i;
     }
 
-    direccion_mitad=elemento_igual_a_la_mitad_suma( v_dinamico, cont_v_dinamico );
+    direccion_mitad=elemento_igual_a_la_suma_dividido_50( v_dinamico, cont_v_dinamico );
     cout << "En el vector dinámico: ";
     if( direccion_mitad ) {
-        cout << "El dato que es igual a la mitad es " << *direccion_mitad<< endl;
+        cout << "El dato que es igual a la suma dividida por 50 es " << *direccion_mitad<< endl;
     } else {
-        cout << "No hay dato que sea igual a la mitad " << endl;
+        cout << "No hay dato que sea igual a la suma dividida por 50 " << endl;
     }
 
     delete [] v_dinamico;
