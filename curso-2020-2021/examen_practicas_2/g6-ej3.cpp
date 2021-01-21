@@ -1,6 +1,10 @@
 /*
-Realizar una función que reciba como parámetros de entrada un vector de números enteros y su tamaño, y devuelva un puntero en el que se almacene la dirección de memoria de algún elemento del vector que sea exactamente igual a la suma de todos los datos dividos por 2. En caso de no haber ningún elemento igual a dicho valor o de no haber elementos en el vector, debe devolver puntero a nulo.
-Además, escribir una función main que muestre que la función puede ser usada con un vector de números reales en memoria estática y, a continuación, con un vector de números reales en memoria dinámica.
+Realizar una función que reciba como parámetros de entrada un vector de números reales y su tamaño, 
+y devuelva un puntero en el que se almacene la dirección de memoria de algún elemento del vector que 
+sea exactamente igual a la suma de todos los datos dividos por 50. En caso de no haber ningún elemento igual 
+a dicho valor o de no haber elementos en el vector, debe devolver puntero a nulo.
+Además, escribir una función main que muestre que la función puede ser usada con un vector de números reales 
+en memoria estática y, a continuación, con un vector de números reales en memoria dinámica.
 
 */
 #include <iostream>
@@ -38,6 +42,7 @@ int main() {
     } else {
         cout << "No hay dato que sea igual a la suma dividida por 50 " << endl;
     }
+    cout << endl;
 
     // Comprobación con vector dinámico
     int cont_v_dinamico=10;
@@ -52,10 +57,10 @@ int main() {
         cout << "El dato que es igual a la suma dividida por 50 es " << *direccion_mitad<< endl;
     } else {
         cout << "No hay dato que sea igual a la suma dividida por 50 " << endl;
-    }
-
-    delete [] v_dinamico;
+    }    
     cout << endl;
+    
+    delete [] v_dinamico;
 
     return 0;
 }
