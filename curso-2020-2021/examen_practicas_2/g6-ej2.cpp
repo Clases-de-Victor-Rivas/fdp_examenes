@@ -1,5 +1,7 @@
 /*
-Escribir una función que reciba entre sus parámetros una matriz MxM de caracteres (M debe ser como máximo 25). La función debe devolver el número de caracteres que son letras mayúsculas que aparecen por encima de la diagonal principal en filas pares de la matriz y el número de caracteres que son letras mayúsculas que aparecen por debajo de la diagonal principal en filas impares de la matriz.
+Escribir una función que reciba entre sus parámetros una matriz MxM de caracteres (M debe ser como máximo 25). 
+La función debe devolver el número de caracteres que son letras mayúsculas que aparecen por encima de la diagonal 
+principal en filas pares de la matriz y el número de caracteres que son letras mayúsculas que aparecen por debajo de la diagonal principal en filas impares de la matriz.
 */
 
 #include <iostream>
